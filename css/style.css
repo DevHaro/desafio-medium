@@ -1,15 +1,1 @@
-#prueba {
-  color: green;
-}
-
-#prueba h1 {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-#prueba:hover h1 {
-  color: blue;
-  -webkit-transform: scale(3) translateX(800px) translateY(200px);
-          transform: scale(3) translateX(800px) translateY(200px);
-}
-/*# sourceMappingURL=style.css.map */
+/* No CSS *//*# sourceMappingURL=style.css.map */
