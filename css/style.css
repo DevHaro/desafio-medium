@@ -1,1 +1,81 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.aside hr {
+  margin-top: 1em;
+  margin-bottom: 2rem;
+}
+
+.aside .popular-on-medium {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.aside .popular-on-medium .contenedor-li .numero {
+  color: lightgray;
+  font-size: 25px;
+  font-weight: medium;
+  margin-top: -8px;
+}
+
+.aside .popular-on-medium .contenedor-li .contenido {
+  line-height: 1.3rem;
+  margin-left: 1rem;
+}
+
+.aside .popular-on-medium .contenedor-li .contenido .popular-primer-a {
+  color: #000000D6;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.aside .popular-on-medium .contenedor-li .contenido .popular-primer-p {
+  color: #000000D6;
+  font-size: .9rem;
+  margin-bottom: 0;
+}
+
+.aside .popular-on-medium .contenedor-li .contenido .popular-primer-p a {
+  color: #000000D6;
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+.aside .popular-on-medium .contenedor-li .contenido .popular-segundo-p {
+  font-size: .9rem;
+  color: #0000008A;
+}
+
+.aside .popular-on-medium .contenedor-li .contenido .estrella {
+  width: .7rem;
+  fill: #ffffff;
+}
+
+.aside footer {
+  display: none;
+}
+
+.aside footer hr {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.aside footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.aside footer ul li {
+  margin: 0 16px 0 0;
+}
+
+.aside footer ul li a {
+  color: #0000008A;
+  font-size: 16px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
