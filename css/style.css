@@ -431,4 +431,12 @@ hr {
   font-size: 16px;
   cursor: pointer;
 }
+
+.haroContainer {
+  margin-top: 20px;
+}
+
+footer {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
