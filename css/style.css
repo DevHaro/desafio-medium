@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 header {
   height: 130px;
 }
@@ -51,5 +52,156 @@ header {
   margin-top: 25px;
   width: 35px;
   height: 35px;
+=======
+.bigCard img {
+  width: 100%;
+  height: auto;
+}
+
+.bigCard .bigCardInfo {
+  width: 65%;
+}
+
+.bigCard .bigCardInfo > p {
+  color: gray;
+}
+
+.bigCard .bigCardInfo h5 {
+  margin-top: 10px;
+  font-size: 21px;
+}
+
+.bigCard .bigCardInfo .belowEachCardImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 13px;
+}
+
+.bigCard .bigCardInfo .belowEachCardImage .moreInfo p {
+  line-height: 5px;
+}
+
+.bigCard .bigCardInfo .belowEachCardImage .moreInfo p:nth-of-type(2) {
+  color: gray;
+}
+
+.bigCard .bigCardInfo .belowEachCardImage .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 25px;
+  top: 10px;
+}
+
+.bigCard .bigCardInfo .belowEachCardImage .icons i {
+  color: gray;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.bigCard .bigCardInfo .belowEachCardImage .icons i:first-of-type {
+  margin-right: 20px;
+}
+
+.cardsBelow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+.cardsBelow h5 {
+  font-size: 18px;
+  position: relative;
+  top: 15px;
+}
+
+.cardsBelow .moreInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.cardsBelow .moreInfo .basedOn {
+  color: gray;
+  font-size: 12px;
+}
+
+.cardsBelow .moreInfo .summary {
+  font-size: 13px;
+  top: 30px;
+  color: gray;
+}
+
+.cardsBelow .moreInfo p:first-of-type {
+  position: relative;
+  top: 40px;
+}
+
+.cardsBelow .moreInfo p {
+  font-size: 13px;
+}
+
+.cardsBelow .moreInfo p:nth-of-type(2) {
+  color: gray;
+  position: relative;
+  top: 30px;
+}
+
+.cardsBelow .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 17px;
+  top: 10px;
+}
+
+.cardsBelow .icons i {
+  color: gray;
+}
+
+.cardsBelow .icons i:first-of-type {
+  margin-right: 10px;
+}
+
+.cardsBelow .shorterImages {
+  height: 70%;
+  width: 35%;
+  top: 20px;
+}
+
+#anchor {
+  top: 50px;
+  left: 10px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #1bc92a;
+}
+
+#anchor a {
+  color: #1bc92a;
+}
+
+hr {
+  margin-top: 70px;
+}
+
+.toggleClass {
+  display: none;
+>>>>>>> 593f0d956d44e7074ec391030a578406d56df85a
 }
 /*# sourceMappingURL=style.css.map */
