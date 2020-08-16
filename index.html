@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Medium - Get smarter about what matters to you.</title>  
 </head>
 <body>
@@ -16,24 +17,42 @@
 
  Propuesta: Antes de las 5 hay que tener el mobile listo.
 -->
-
-
-
   <!--  FANNY -> Cambia lo que necesites.-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="#"></a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  <header>
+    <nav class="navbar navbar-expand ">
+      <img id="logo"src="img/medium-mobile-logo.svg" alt="">
+        <div class="navbar-nav">
+          <img id="search" src="img/icon-search.svg" alt="">
+          <img id="notify" src="img/icon-notify.svg" alt="">
+          <img id="man" src="img/man.svg" alt="">
+        </div>
+    </nav>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <span class="carousel-tex w-100">Home</span>
+          <span class="carousel-tex w-100">Popular</span>
+          <span class="carousel-tex w-100">Momentum </span>
+          <span class="carousel-tex w-100">Coronavirus</span>
+        </div>
+        <div class="carousel-item">
+          <span class="w-100">prueba 2</span>
+        </div>
+        <div class="carousel-item">
+          <span class="w-100">prueba 2</span>
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon-use"><path fill="#9c9c9c" d="M13.402 16.957l-6.478-6.479L13.402 4l.799.71-5.768 5.768 5.768 5.77z" ></path></svg>
+        </span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span aria-hidden="true"></span>
+      </a>
     </div>
-  </nav>
+  </header>
+  
 
 
 
