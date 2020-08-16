@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
   <script src="https://kit.fontawesome.com/0584716978.js" crossorigin="anonymous"></script>
@@ -17,9 +19,6 @@
 
  Propuesta: Antes de las 5 hay que tener el mobile listo.
 -->
-
-
-
   <!--  FANNY -> Cambia lo que necesites.-->
   <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -32,9 +31,42 @@
         <a class="nav-link" href="#">Features</a>
         <a class="nav-link" href="#">Pricing</a>
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  <header>
+    <nav class="navbar navbar-expand ">
+      <img id="logo"src="img/medium-mobile-logo.svg" alt="">
+        <div class="navbar-nav">
+          <img id="search" src="img/icon-search.svg" alt="">
+          <img id="notify" src="img/icon-notify.svg" alt="">
+          <img id="man" src="img/man.svg" alt="">
+        </div>
+    </nav>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <span class="carousel-tex w-100">Home</span>
+          <span class="carousel-tex w-100">Popular</span>
+          <span class="carousel-tex w-100">Momentum </span>
+          <span class="carousel-tex w-100">Coronavirus</span>
+        </div>
+        <div class="carousel-item">
+          <span class="w-100">prueba 2</span>
+        </div>
+        <div class="carousel-item">
+          <span class="w-100">prueba 2</span>
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon-use"><path fill="#9c9c9c" d="M13.402 16.957l-6.478-6.479L13.402 4l.799.71-5.768 5.768 5.768 5.77z" ></path></svg>
+        </span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span aria-hidden="true"></span>
+      </a>
     </div>
   </nav> -->
+  </header>
+  
 
 
 
@@ -44,9 +76,90 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-4"></div>
-      <div class="col-12 col-md-4"></div>
-      <div class="col-12 col-md-4"></div>
+      <div class="col-12 col-md-4">
+        <div class="bigCard">
+          <img src="https://source.unsplash.com/random/400x150" alt="Random Image">
+          <div class="bigCardInfo">
+            <h5>Five Chilling Instances of time slips</h5>
+            <p>Urban legend,Nonsense,or something more?</p>
+            <div class="belowEachCardImage">
+              <div class="moreInfo">
+                <p>Tony stalker in Inside the Simula...</p>
+                <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+              </div>
+                <div class="icons position-relative">
+                  <i class="far fa-bookmark"></i>
+                  <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="cardsBelow">
+          <div class="moreInfo">
+            <h5>How to live when your live is governed by fear.</h5>
+            <p>Tony stalker in Inside the Simula...</p>
+            <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+          </div>
+          <div class="icons position-relative">
+            <i class="far fa-bookmark"></i>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <img src="https://source.unsplash.com/random/100x62" alt="Random Image">
+        </div>
+        <!-- Next Card -->
+        <div class="cardsBelow">
+          <div class="moreInfo">
+            <h5>How to live when your live is governed by fear.</h5>
+            <p>Tony stalker in Inside the Simula...</p>
+            <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+          </div>
+          <div class="icons position-relative">
+            <i class="far fa-bookmark"></i>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <img src="https://source.unsplash.com/random/100x60" alt="Random Image">
+        </div>
+        <!-- Next Card -->
+        <div class="cardsBelow">
+          <div class="moreInfo">
+            <h5>How to live when your live is governed by fear.</h5>
+            <p>Tony stalker in Inside the Simula...</p>
+            <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+          </div>
+          <div class="icons position-relative">
+            <i class="far fa-bookmark"></i>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <img src="https://source.unsplash.com/random/100x61" alt="Random Image">
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="bigCard toggleClass">
+          <img src="https://source.unsplash.com/random/400x150" alt="Random Image">
+          <div class="bigCardInfo">
+            <h5>Five Chilling Instances of time slips</h5>
+            <p>Urban legend,Nonsense,or something more?</p>
+            <div class="belowEachCardImage">
+              <div class="moreInfo">
+                <p>Tony stalker in Inside the Simula...</p>
+                <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+              </div>
+                <div class="icons position-relative">
+                  <i class="far fa-bookmark"></i>
+                  <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- ANCHOR -->
+        <div id="anchor" class="position-relative">
+          <a href="#" class="position-relative">SEE EDITOR´S PICKS</a>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <hr>
+      </div>
     </div>
   </div>
 
@@ -57,7 +170,97 @@
 <!-- MAURO (primer col-12)-->
 
   <div class="container">
-    <div class="col-12"></div>
+    <div class="col-12 col-md-7">
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/101x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+      <!-- NEXT CARD -->
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/102x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+      <!-- NEXT CARD -->
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/103x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+      <!-- NEXT CARD -->
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/104x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+      <!-- NEXT CARD -->
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/99x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+      <!-- NEXT CARD -->
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/98x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+    </div>
     <!-- El de abajo -->
     <div class="col-12 col-md-4 aside">
       <h3 class="h4">Popular on Medium</h3> 
@@ -130,10 +333,85 @@
   </div>
 
 
-  
+
   <!-- MAURO  Las  últimas 5 cards-->
   <div class="container">
-    <div class="col-12"></div>
+    <div class="col-12 col-md-7">
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/101x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+      <!-- NEXT CARD -->
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/102x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+      <!-- NEXT CARD -->
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/103x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+      <!-- NEXT CARD -->
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/104x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+      <!-- NEXT CARD -->
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p>Aug 4 <span>&#183;</span> 10 min read. <i class="fas fa-star"></i></p>
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/107x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+    </div>
   </div>
 
 
