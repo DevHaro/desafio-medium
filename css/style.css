@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 header {
   height: 130px;
 }
@@ -52,7 +51,8 @@ header {
   margin-top: 25px;
   width: 35px;
   height: 35px;
-=======
+}
+
 .bigCard img {
   width: 100%;
   height: auto;
@@ -202,6 +202,5 @@ hr {
 
 .toggleClass {
   display: none;
->>>>>>> 593f0d956d44e7074ec391030a578406d56df85a
 }
 /*# sourceMappingURL=style.css.map */
