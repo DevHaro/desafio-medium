@@ -339,6 +339,7 @@ hr{
   }
 .haroContainer{
     margin-top: 20px;
+    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
 }
 footer{
     display: none;
@@ -392,30 +393,43 @@ footer{
             }
         }
     }
-}
-.bigCard{
-    .bigCardInfo{
-        .belowEachCardImage{
-            .moreInfo{
-                p{
-                    line-height: 15px;
-                }
-            } 
-            .icons{
-                .far{
-                    display: none;
-                }
-                .fas{
-                    position: relative;
-                    left: 20px;
+    .bigCard{
+        .bigCardInfo{
+            .belowEachCardImage{
+                .moreInfo{
+                    p{
+                        line-height: 15px;
+                    }
+                } 
+                .icons{
+                    .far{
+                        display: none;
+                    }
+                    .fas{
+                        position: relative;
+                        left: 20px;
+                    }
                 }
             }
         }
-    }
-    .aboveMove{
+        .aboveMove{
+            position: relative;
+            left: 50px;
+        }
+    }   
+    .haroContainer{
+        float: right;
         position: relative;
+        top: -1250px;
         left: 50px;
+        hr{
+            width: 80%;
+            position: relative;
+            right: 40px;
+        }
+        footer{
+            display: block;
+        }
     }
-}   
-
-
+    
+}

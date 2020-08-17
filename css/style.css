@@ -434,6 +434,7 @@ hr {
 
 .haroContainer {
   margin-top: 20px;
+  font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
 }
 
 footer {
@@ -490,23 +491,33 @@ footer {
   .imagesAbove .cardsBelow img {
     width: 50%;
   }
-}
-
-.bigCard .bigCardInfo .belowEachCardImage .moreInfo p {
-  line-height: 15px;
-}
-
-.bigCard .bigCardInfo .belowEachCardImage .icons .far {
-  display: none;
-}
-
-.bigCard .bigCardInfo .belowEachCardImage .icons .fas {
-  position: relative;
-  left: 20px;
-}
-
-.bigCard .aboveMove {
-  position: relative;
-  left: 50px;
+  .bigCard .bigCardInfo .belowEachCardImage .moreInfo p {
+    line-height: 15px;
+  }
+  .bigCard .bigCardInfo .belowEachCardImage .icons .far {
+    display: none;
+  }
+  .bigCard .bigCardInfo .belowEachCardImage .icons .fas {
+    position: relative;
+    left: 20px;
+  }
+  .bigCard .aboveMove {
+    position: relative;
+    left: 50px;
+  }
+  .haroContainer {
+    float: right;
+    position: relative;
+    top: -1250px;
+    left: 50px;
+  }
+  .haroContainer hr {
+    width: 80%;
+    position: relative;
+    right: 40px;
+  }
+  .haroContainer footer {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
