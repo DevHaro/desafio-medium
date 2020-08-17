@@ -439,4 +439,74 @@ hr {
 footer {
   display: none;
 }
+
+@media only screen and (min-width: 1200px) {
+  #anchor {
+    left: 120px;
+  }
+  #crossedHr {
+    width: 72vw;
+    position: relative;
+    right: 760px;
+  }
+  .toggleClass {
+    display: block;
+    position: relative;
+    top: -5px;
+  }
+  .toggleClass img {
+    width: 80%;
+  }
+  .imagesAbove {
+    position: relative;
+    top: -42px;
+  }
+  .imagesAbove .cardsBelow {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-top: 20px;
+    position: relative;
+    top: 20px;
+  }
+  .imagesAbove .cardsBelow .icons {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    top: -20px;
+  }
+  .imagesAbove .cardsBelow .icons i:first-of-type {
+    display: none;
+  }
+  .imagesAbove .cardsBelow .moreInfo {
+    position: relative;
+    top: -18px;
+    left: 25px;
+  }
+  .imagesAbove .cardsBelow .moreInfo p {
+    line-height: 15px;
+  }
+  .imagesAbove .cardsBelow img {
+    width: 50%;
+  }
+}
+
+.bigCard .bigCardInfo .belowEachCardImage .moreInfo p {
+  line-height: 15px;
+}
+
+.bigCard .bigCardInfo .belowEachCardImage .icons .far {
+  display: none;
+}
+
+.bigCard .bigCardInfo .belowEachCardImage .icons .fas {
+  position: relative;
+  left: 20px;
+}
+
+.bigCard .aboveMove {
+  position: relative;
+  left: 50px;
+}
 /*# sourceMappingURL=style.css.map */

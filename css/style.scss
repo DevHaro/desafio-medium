@@ -343,3 +343,79 @@ hr{
 footer{
     display: none;
 }
+
+
+@media only screen and (min-width:1200px){
+#anchor{
+    left: 120px;
+}
+#crossedHr{
+    width: 72vw;
+    position: relative;
+    right: 760px;
+}
+    .toggleClass{
+        display: block;
+        position: relative;
+        top: -5px;
+        img{
+            width: 80%;
+        }
+    }
+    .imagesAbove{
+        position: relative;
+        top: -42px;
+    }
+    .imagesAbove{
+        .cardsBelow{
+            flex-direction: row-reverse;
+            margin-top: 20px;
+            position: relative;
+            top: 20px;
+            .icons{
+                order: -1;
+                top: -20px;
+                i:first-of-type{
+                    display:none;
+                }
+            }
+            .moreInfo{
+                position: relative;
+                top:-18px;
+                left: 25px;
+                p{
+                    line-height: 15px;
+                }
+            }
+            img{
+                width: 50%;
+            }
+        }
+    }
+}
+.bigCard{
+    .bigCardInfo{
+        .belowEachCardImage{
+            .moreInfo{
+                p{
+                    line-height: 15px;
+                }
+            } 
+            .icons{
+                .far{
+                    display: none;
+                }
+                .fas{
+                    position: relative;
+                    left: 20px;
+                }
+            }
+        }
+    }
+    .aboveMove{
+        position: relative;
+        left: 50px;
+    }
+}   
+
+
