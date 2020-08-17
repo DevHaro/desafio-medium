@@ -1,3 +1,6 @@
+html{
+    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+}
 header{
     height: 130px;
 }
@@ -359,6 +362,7 @@ footer{
         display: block;
         position: relative;
         top: -5px;
+        width: 350px;
         img{
             width: 80%;
         }
@@ -366,6 +370,7 @@ footer{
     .imagesAbove{
         position: relative;
         top: -42px;
+        width: 10px;
     }
     .imagesAbove{
         .cardsBelow{
@@ -394,6 +399,9 @@ footer{
         }
     }
     .bigCard{
+        img{
+            height: 134px;
+        }
         .bigCardInfo{
             .belowEachCardImage{
                 .moreInfo{
@@ -431,5 +439,4 @@ footer{
             display: block;
         }
     }
-    
 }

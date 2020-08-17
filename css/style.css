@@ -1,3 +1,7 @@
+html {
+  font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+}
+
 header {
   height: 130px;
 }
@@ -454,6 +458,7 @@ footer {
     display: block;
     position: relative;
     top: -5px;
+    width: 350px;
   }
   .toggleClass img {
     width: 80%;
@@ -461,6 +466,7 @@ footer {
   .imagesAbove {
     position: relative;
     top: -42px;
+    width: 10px;
   }
   .imagesAbove .cardsBelow {
     -webkit-box-orient: horizontal;
@@ -490,6 +496,9 @@ footer {
   }
   .imagesAbove .cardsBelow img {
     width: 50%;
+  }
+  .bigCard img {
+    height: 134px;
   }
   .bigCard .bigCardInfo .belowEachCardImage .moreInfo p {
     line-height: 15px;
