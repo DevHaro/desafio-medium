@@ -411,11 +411,13 @@ hr {
 }
 
 .aside footer hr {
-  margin-top: 5rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: .5rem;
+  margin-left: -1rem;
 }
 
 .aside footer ul {
+  margin-left: -1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,12 +429,12 @@ hr {
 }
 
 .aside footer ul li {
-  margin: 0 16px 0 0;
+  margin: 0 15px 0 0;
 }
 
 .aside footer ul li a {
   color: #0000008A;
-  font-size: 16px;
+  font-size: 13px;
   cursor: pointer;
 }
 
@@ -452,6 +454,9 @@ footer {
     width: 72vw;
     position: relative;
     right: 760px;
+  }
+  .card-bottom-mobile {
+    display: none;
   }
   .toggleClass {
     display: block;
@@ -513,12 +518,22 @@ footer {
     position: relative;
     left: 50px;
   }
-  .haroContainer hr {
-    width: 80%;
-    position: relative;
+  .content .haroContainer .aside {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1px;
+    margin: auto;
+  }
+  .content .haroContainer h4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
+  .content .haroContainer hr {
     right: 40px;
   }
-  .haroContainer footer {
+  .content .haroContainer footer {
     display: block;
   }
 }
