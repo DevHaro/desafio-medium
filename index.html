@@ -1,101 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8">  
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" class="js-glyph-" id="glyph-8" href="https://glyph.medium.com/css/e/sr/latin/e/ssr/latin/e/ssb/latin/m2.css">
+  <script src="https://kit.fontawesome.com/0584716978.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <title>Medium - Get smarter about what matters to you.</title>  
 </head>
 <body>
-
-<!-- Empezar en modo mobile ! iphone 6,7,8plus
- FANNY -> Fanny va a hacer el navbar con carousel. 
- MAURO -> Yo voy a hacer la sección que le sigue (arriba del <hr>) y las cards que están a la izquiera del popular on medium.
- HARO -> Popular on Medium, que sea sticky y el footer.
-
- Propuesta: Antes de las 5 hay que tener el mobile listo.
--->
-  <!--  FANNY -> Cambia lo que necesites.-->
+  <!--fanny-->
   <header>
-    <nav class="navbar navbar-expand ">
-      <img id="logo"src="img/medium-mobile-logo.svg" alt="">
-        <div class="navbar-nav">
-          <img id="search" src="img/icon-search.svg" alt="">
-          <img id="notify" src="img/icon-notify.svg" alt="">
-          <img id="man" src="img/man.svg" alt="">
+    <div class="mobile-header">
+      <nav class="navbar navbar-expand mx-auto ">
+        <img id="logo"src="img/medium-mobile-logo.svg" alt="">
+          <div class="navbar-nav">
+            <svg id="search" xmlns="http://www.w3.org/2000/svg" class="svgIcon-use"><path fill="#757575" d="M20.067 18.933l-4.157-4.157a6 6 0 10-.884.884l4.157 4.157a.624.624 0 10.884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z"></path></svg>
+            <svg id="notify" xmlns="http://www.w3.org/2000/svg" class="svgIcon-use" viewBox="-293 409 25 25"><path fill="#757575" d="M-273.327 423.67l-1.673-1.52v-3.646a5.5 5.5 0 00-6.04-5.474c-2.86.273-4.96 2.838-4.96 5.71v3.41l-1.68 1.553c-.204.19-.32.456-.32.734V427a1 1 0 001 1h3.49a3.079 3.079 0 003.01 2.45 3.08 3.08 0 003.01-2.45h3.49a1 1 0 001-1v-2.59c0-.28-.12-.55-.327-.74zm-7.173 5.63c-.842 0-1.55-.546-1.812-1.3h3.624a1.92 1.92 0 01-1.812 1.3zm6.35-2.45h-12.7v-2.347l1.63-1.51c.236-.216.37-.522.37-.843v-3.41c0-2.35 1.72-4.356 3.92-4.565a4.353 4.353 0 014.78 4.33v3.645c0 .324.137.633.376.85l1.624 1.477v2.373z"></path></svg>
+            <img id="man" src="img/man.svg" alt="">
+          </div>
+      </nav>
+      <div id="carouselExampleControls" class="carousel slide " data-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <span class="carousel-tex w-100">HOME</span>
+            <span class="carousel-tex w-100">POPULAR</span>
+            <span class="carousel-tex w-100">MOMENTUM </span>
+            <span class="carousel-tex w-100">CORO</span>
+          </div>
+          <div class="carousel-item ">
+            <span class="carousel-tex w-100">CORONAVIRUS</span>
+            <span class="carousel-tex w-100">ONEZERO</span>
+            <span class="carousel-tex w-100">ELEMENTAL</span>
+          </div>
+          <div class="carousel-item ">
+            <span class="carousel-tex w-100">GEN</span>
+            <span class="carousel-tex w-100">ZORA</span>
+            <span class="carousel-tex w-100">FORGE</span>
+            <span class="carousel-tex w-100">HUMAN PARTS</span>
+          </div>
+          <div class="carousel-item">
+            <span class="carousel-tex w-100">FORGE</span>
+            <span class="carousel-tex w-100">HUMAN PARTS</span>
+            <span class="carousel-tex w-100">MARKER</span>
+            <span class="carousel-tex w-100">LEVEL</span>
+          </div>
+          <div class="carousel-item">
+            <span class="carousel-tex w-100">MARKER</span>
+            <span class="carousel-tex w-100">LEVEL</span>
+            <span class="carousel-tex w-100">HEADER</span>
+            <span class="carousel-tex w-100">MORE</span>
+          </div>
         </div>
-    </nav>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <span class="carousel-tex w-100">Home</span>
-          <span class="carousel-tex w-100">Popular</span>
-          <span class="carousel-tex w-100">Momentum </span>
-        </div>
-        <div class="carousel-item">
-          <span class="carousel-tex w-100">Coronavirus</span>
-          <span class="carousel-tex w-100">Onezero</span>
-          <span class="carousel-tex w-100">Elemental</span>
-        </div>
-        <div class="carousel-item">
-          <span class="carousel-tex w-100">Gen</span>
-          <span class="carousel-tex w-100">Zora</span>
-          <span class="carousel-tex w-100">Forge</span>
-        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon-use" id="i-l"><path fill="#9C9C9C" d="M13.402 16.957l-6.478-6.479L13.402 4l.799.71-5.768 5.768 5.768 5.77z" ></path></svg>
+          </span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon-use" id="i-r"><path fill="#9C9C9C" d="M8.3 4.2l6.4 6.3-6.4 6.3-.8-.8 5.5-5.5L7.5 5"></path></svg>
+          </span>
+        </a>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon-use" id="i-l"><path fill="#9c9c9c" d="M13.402 16.957l-6.478-6.479L13.402 4l.799.71-5.768 5.768 5.768 5.77z" ></path></svg>
-        </span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon-use" id="i-r"><path fill="#9c9c9c" d="M8.3 4.2l6.4 6.3-6.4 6.3-.8-.8 5.5-5.5L7.5 5"></path></svg>
-        </span>
-      </a>
+    </div>
+    <div class="desk-header">
+      <nav class="navbar navbar-expand mx-auto ">
+        <img id="logo"src="img/medium-logo-desktop.svg" alt="">
+          <div class="navbar-nav">
+            <svg id="search" xmlns="http://www.w3.org/2000/svg" class="svgIcon-use"><path fill="#757575" d="M20.067 18.933l-4.157-4.157a6 6 0 10-.884.884l4.157 4.157a.624.624 0 10.884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z"></path></svg>
+            <svg id="boo-nav" xmlns="http://www.w3.org/2000/svg" class="svgIcon-use"><path d="M16 6c1.1 0 2 .9 2 2v13.661h-.012a.5.5 0 01-.118.285.508.508 0 01-.708.03L11.5 17.85l-5.662 4.125a.5.5 0 01-.706-.03.478.478 0 01-.12-.285H5V8c0-1.1.9-2 2-2h9zM6 8v12.636l5.162-3.667a.49.49 0 01.676 0L17 20.637V8c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1z"></path><path fill="#757575" d="M21 5v13.661h-.012a.5.5 0 01-.118.285.508.508 0 01-.708.03L20 18.858V5c0-.55-.45-1-1-1h-9c-.55 0-1 .45-1 1H8c0-1.1.9-2 2-2h9c1.1 0 2 .9 2 2z"></path></svg>
+            <svg id="notify" xmlns="http://www.w3.org/2000/svg" class="svgIcon-use" viewBox="-293 409 25 25"><path fill="#757575" d="M-273.327 423.67l-1.673-1.52v-3.646a5.5 5.5 0 00-6.04-5.474c-2.86.273-4.96 2.838-4.96 5.71v3.41l-1.68 1.553c-.204.19-.32.456-.32.734V427a1 1 0 001 1h3.49a3.079 3.079 0 003.01 2.45 3.08 3.08 0 003.01-2.45h3.49a1 1 0 001-1v-2.59c0-.28-.12-.55-.327-.74zm-7.173 5.63c-.842 0-1.55-.546-1.812-1.3h3.624a1.92 1.92 0 01-1.812 1.3zm6.35-2.45h-12.7v-2.347l1.63-1.51c.236-.216.37-.522.37-.843v-3.41c0-2.35 1.72-4.356 3.92-4.565a4.353 4.353 0 014.78 4.33v3.645c0 .324.137.633.376.85l1.624 1.477v2.373z"></path></svg>
+            <button type="button" class="btn btn-outline-secondary">Upgrade</button>
+            <img id="man" src="img/man.svg" alt="">
+          </div>
+      </nav>
+      <div id="carouselExampleControls" class="carousel slide " data-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <span class="carousel-tex w-100">HOME</span>
+            <span class="carousel-tex w-100">POPULAR</span>
+            <span class="carousel-tex w-100">MOMENTUM </span>
+            <span class="carousel-tex w-100">CORONAVIRUS</span>
+            <span class="carousel-tex w-100">ONEZERO</span>
+            <span class="carousel-tex w-100">ELEMENTAL</span>
+            <span class="carousel-tex w-100">GEN</span>
+            <span class="carousel-tex w-100">ZORA</span>
+            <span class="carousel-tex w-100">FORGE</span>
+            <span class="carousel-tex w-100">HUMAN PARTS</span>
+            <span class="carousel-tex w-100">MARKER</span>
+          </div>
+          <div class="carousel-item">
+            <span class="carousel-tex w-100">MENTUM </span>
+            <span class="carousel-tex w-100">CORONAVIRUS</span>
+            <span class="carousel-tex w-100">ONEZERO</span>
+            <span class="carousel-tex w-100">ELEMENTAL</span>
+            <span class="carousel-tex w-100">GEN</span>
+            <span class="carousel-tex w-100">ZORA</span>
+            <span class="carousel-tex w-100">FORGE</span>
+            <span class="carousel-tex w-100">HUMAN PARTS</span>
+            <span class="carousel-tex w-100">MARKER</span>
+            <span class="carousel-tex w-100">LEVEL</span>
+            <span class="carousel-tex w-100">HEADER</span>
+            <span class="carousel-tex w-100">MORE</span>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon-use" id="i-l"><path fill="#9C9C9C" d="M13.402 16.957l-6.478-6.479L13.402 4l.799.71-5.768 5.768 5.768 5.77z" ></path></svg>
+          </span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon-use" id="i-r"><path fill="#9C9C9C" d="M8.3 4.2l6.4 6.3-6.4 6.3-.8-.8 5.5-5.5L7.5 5"></path></svg>
+          </span>
+        </a>
+      </div>
     </div>
   </header>
-  
-
-
-
-
-
-<!-- MAURO -->
-
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-4"></div>
-      <div class="col-12 col-md-4"></div>
-      <div class="col-12 col-md-4"></div>
+      <div class="col-12 col-md-4">
+        <div class="bigCard">
+          <img src="https://source.unsplash.com/random/400x150" alt="Random Image">
+          <div class="bigCardInfo aboveMove">
+            <h5>Five Chilling Instances of time slips</h5>
+            <p>Urban legend,Nonsense,or something more?</p>
+            <div class="belowEachCardImage">
+              <div class="moreInfo">
+                <p>Tony Stalker in Inside</p>
+                <p data-toggle="tooltip" data-placement="top" title="Updated Aug 4">Aug 4 <span>&#183;</span> <span title="10 min read"> 10 min read. </span><i class="fas fa-star"></i></p>  
+              </div>
+                <div class="icons position-relative">
+                  <i class="far fa-bookmark"></i>
+                  <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 imagesAbove">
+        <div class="cardsBelow">
+          <div class="moreInfo">
+            <h5>How to live when your live is governed by fear.</h5>
+            <p>Daniel Menchaca in Live</p>
+            <p>Aug 4 <span>&#183;</span><span data-toggle="tooltip" data-placement="bottom" title="10 min read">  10 min read. </span><i class="fas fa-star"></i></p>
+          </div>
+          <div class="icons position-relative">
+            <i class="far fa-bookmark"></i>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <img src="https://source.unsplash.com/random/100x62" alt="Random Image">
+        </div>
+        <!-- Next Card -->
+        <div class="cardsBelow">
+          <div class="moreInfo">
+            <h5>How to live when your live is governed by fear.</h5>
+            <p>Eduard Watson in Thunder</p>
+            <p data-toggle="tooltip" data-placement="top" title="Updated Aug 4">Aug 4 <span>&#183;</span> <span title="10 min read"> 10 min read. </span><i class="fas fa-star"></i></p>  
+          </div>
+          <div class="icons position-relative">
+            <i class="far fa-bookmark"></i>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <img src="https://source.unsplash.com/random/100x60" alt="Random Image">
+        </div>
+        <!-- Next Card -->
+        <div class="cardsBelow">
+          <div class="moreInfo">
+            <h5>How to live when your live is governed by fear.</h5>
+            <p>Felix Anderson in Phip.</p>
+            <p data-toggle="tooltip" data-placement="top" title="Updated Aug 4">Aug 4 <span>&#183;</span> <span title="10 min read"> 10 min read. </span><i class="fas fa-star"></i></p>  
+          </div>
+          <div class="icons position-relative">
+            <i class="far fa-bookmark"></i>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <img src="https://source.unsplash.com/random/100x61" alt="Random Image">
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="bigCard toggleClass">
+          <img src="https://source.unsplash.com/random/401x150" alt="Random Image">
+          <div class="bigCardInfo">
+            <h5>Five Chilling Instances of time slips</h5>
+            <p>Urban legend,Nonsense,or something more?</p>
+            <div class="belowEachCardImage">
+              <div class="moreInfo">
+                <p>Kevin Radke in Tool.</p>
+                <p data-toggle="tooltip" data-placement="top" title="Updated Aug 4">Aug 4 <span>&#183;</span> <span title="10 min read"> 10 min read. </span><i class="fas fa-star"></i></p>  
+              </div>
+                <div class="icons position-relative">
+                  <i class="far fa-bookmark"></i>
+                  <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- ANCHOR -->
+        <div id="anchor" class="position-relative">
+          <a href="#" class="position-relative">SEE EDITOR´S PICKS</a>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <hr id="crossedHr">
+      </div>
     </div>
   </div>
-
-
 
 
 
 <!-- MAURO (primer col-12)-->
+  <div class="container content">
+    <div class="row">
+    <div class="col-12 col-md-7">
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p data-toggle="tooltip" data-placement="top" title="Updated Aug 4">Aug 4 <span>&#183;</span> <span title="10 min read"> 10 min read. </span><i class="fas fa-star"></i></p>               
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/101x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+      <!-- NEXT CARD -->
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p data-toggle="tooltip" data-placement="top" title="Updated Aug 4">Aug 4 <span>&#183;</span> <span title="10 min read"> 10 min read. </span><i class="fas fa-star"></i></p>  
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/102x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+      <!-- NEXT CARD -->
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p data-toggle="tooltip" data-placement="top" title="Updated Aug 4">Aug 4 <span>&#183;</span> <span title="10 min read"> 10 min read. </span><i class="fas fa-star"></i></p>  
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/103x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+      <!-- NEXT CARD -->
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p data-toggle="tooltip" data-placement="top" title="Updated Aug 4">Aug 4 <span>&#183;</span> <span title="10 min read"> 10 min read. </span><i class="fas fa-star"></i></p>            
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/104x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+      <!-- NEXT CARD -->
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p data-toggle="tooltip" data-placement="top" title="Updated Aug 4">Aug 4 <span>&#183;</span> <span title="10 min read"> 10 min read. </span><i class="fas fa-star"></i></p>  
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/99x60" alt="Random Image" class="shorterImages position-relative">
+      </div>
+      <!-- NEXT CARD -->
+      <div class="cardsBelow">
+        <div class="moreInfo">
+          <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+          <h5>How to live when your live is governed by fear.</h5>
+          <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+          <p>Tony stalker in Inside the Simula...</p>
+          <p data-toggle="tooltip" data-placement="top" title="Updated Aug 4">Aug 4 <span>&#183;</span> <span title="10 min read"> 10 min read. </span><i class="fas fa-star"></i></p>  
+        </div>
+        <div class="icons position-relative">
+          <i class="far fa-bookmark"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="https://source.unsplash.com/random/98x60" alt="Random Image" class="shorterImages position-relative">
+      </div>      
+    </div>
 
-  <div class="container">
-    <div class="col-12"></div>
+    <div class="col-md-1"></div>
+
     <!-- El de abajo -->
-    <div class="col-12"></div>
-    <!-- HARO (El de arriba) Ese es el Popular on Medium, luego agregas un footer dentro del div-->
-  </div>
-
-
+    <div class="col-12 col-md-3 haroContainer">
+      <div class="aside">
+        <hr>
+        <ul class="popular-on-medium ">  
+          <h3 class="h4">Popular on Medium</h3> 
+          <li class="contenedor-li d-flex">
+            <div class="numero">
+              <p>01</p>
+            </div>
+            <div class="contenido d-block">
+              <a href="" class="popular-primer-a">How to identify a Smart Person in 3 minutes</a>
+              <p class="popular-primer-p"><a href="">Nicklas Göke</a> in <a href="">Forge</a></p> 
+              <p class="popular-segundo-p" data-toggle="tooltip" data-placement="top" title="Updated Aug 17">Aug 2 -<span title="3 min read"> 3 min read </span><span><img src="/img/estrella.svg" class="estrella" alt=""></span></p> 
+            </div>            
+          </li>
+          <li class="contenedor-li d-flex">
+            <div class="numero">
+              <p>02</p>
+            </div>
+            <div class="contenido d-block">
+              <a href="" class="popular-primer-a">Five Chilling Instances of Slips In Time</a>
+              <p class="popular-primer-p"><a href="">Tony Walker</a> in <a href="">Inside the Simulation</a></>
+              <p class="popular-segundo-p" data-toggle="tooltip" data-placement="top" title="Updated Aug 17">Aug 2 -<span title="3 min read"> 3 min read </span><span><img src="/img/estrella.svg" class="estrella" alt=""></span></p>
+            </div>              
+          </li>
+          
+          <li class="contenedor-li d-flex"> 
+            <div class="numero">
+              <p>03</p>
+            </div>
+            <div class="contenido">
+              <a href="" class="popular-primer-a">90% of You Don’t Eat Enough of This Crucial Food</a>
+            <p class="popular-primer-p"><a href="" class="popular-primer-p">Alyssa Atkinson</a> in <a href="">In Fitness And In Health</a></p>
+            <p class="popular-segundo-p" data-toggle="tooltip" data-placement="top" title="Updated Aug 11">Aug 9 - <span title="4 min read"> 4 min read </span><span><img src="/img/estrella.svg" class="estrella" alt=""></span></p>
+            </div>          
+          </li>
   
+          <li class="contenedor-li d-flex">
+            <div class="numero">
+              <p>04</p>
+            </div>
+            <div class="contenido">
+              <a href="" class="popular-primer-a">Donald Trump Would Rather Burn the Whole Country Down Than Lose</a>
+              <p class="popular-primer-p"><a href="">Drew Magary</a> in <a href="">GEN</a></p>
+              <p class="popular-segundo-p" data-toggle="tooltip" data-placement="top" title="Updated Aug 13">Aug 12 - <span title="5 min read"> 5 min read </span> <span><img src="/img/estrella.svg" class="estrella" alt=""></span></p>
+            </div>          
+          </li>
+        </ul>
+          <footer>
+            <hr>
+            <ul>
+              <li><a href="">Help</a></li>
+              <li><a href="">Status</a></li>
+              <li><a href="">Writers</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Terms</a></li>
+              <li><a href="">About</a></li>          
+            </ul>
+          </footer">
+      </div>
+    </div>
+  </div>
+</div>
+    
+  
+   
+
   <!-- MAURO  Las  últimas 5 cards-->
   <div class="container">
-    <div class="col-12"></div>
+    <div class="row">
+      <div class="col-12 col-md-7">
+        <div class="cardsBelow card-bottom-mobile">
+          <div class="moreInfo">
+            <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+            <h5>How to live when your live is governed by fear.</h5>
+            <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+            <p>Tony stalker in Inside the Simula...</p>
+            <p data-toggle="tooltip" data-placement="top" title="Updated Aug 4">Aug 4 <span>&#183;</span> <span title="10 min read"> 10 min read. </span><i class="fas fa-star"></i></p>              
+          </div>
+          <div class="icons position-relative">
+            <i class="far fa-bookmark"></i>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <img src="https://source.unsplash.com/random/101x60" alt="Random Image" class="shorterImages position-relative">
+        </div>
+        <!-- NEXT CARD -->
+        <div class="cardsBelow card-bottom-mobile">
+          <div class="moreInfo">
+            <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+            <h5>How to live when your live is governed by fear.</h5>
+            <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+            <p>Tony stalker in Inside the Simula...</p>
+            <p data-toggle="tooltip" data-placement="top" title="Updated Aug 4">Aug 4 <span>&#183;</span> <span title="10 min read"> 10 min read. </span><i class="fas fa-star"></i></p>  
+          </div>
+          <div class="icons position-relative">
+            <i class="far fa-bookmark"></i>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <img src="https://source.unsplash.com/random/102x60" alt="Random Image" class="shorterImages position-relative">
+        </div>
+        <!-- NEXT CARD -->
+        <div class="cardsBelow card-bottom-mobile">
+          <div class="moreInfo">
+            <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+            <h5>How to live when your live is governed by fear.</h5>
+            <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+            <p>Tony stalker in Inside the Simula...</p>
+            <p data-toggle="tooltip" data-placement="top" title="Updated Aug 4">Aug 4 <span>&#183;</span> <span title="10 min read"> 10 min read. </span><i class="fas fa-star"></i></p>  
+          </div>
+          <div class="icons position-relative">
+            <i class="far fa-bookmark"></i>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <img src="https://source.unsplash.com/random/103x60" alt="Random Image" class="shorterImages position-relative">
+        </div>
+        <!-- NEXT CARD -->
+        <div class="cardsBelow card-bottom-mobile">
+          <div class="moreInfo">
+            <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+            <h5>How to live when your live is governed by fear.</h5>
+            <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+            <p>Tony stalker in Inside the Simula...</p>
+            <p data-toggle="tooltip" data-placement="top" title="Updated Aug 4">Aug 4 <span>&#183;</span> <span title="10 min read"> 10 min read. </span><i class="fas fa-star"></i></p>  
+          </div>
+          <div class="icons position-relative">
+            <i class="far fa-bookmark"></i>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <img src="https://source.unsplash.com/random/104x60" alt="Random Image" class="shorterImages position-relative">
+        </div>
+        <!-- NEXT CARD -->
+        <div class="cardsBelow card-bottom-mobile">
+          <div class="moreInfo">
+            <h5 class="basedOn">BASED ON YOUR READING HISTORY</h5>
+            <h5>How to live when your live is governed by fear.</h5>
+            <div class="position-relative summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.</div>
+            <p>Tony stalker in Inside the Simula...</p>
+            <p data-toggle="tooltip" data-placement="top" title="Updated Aug 4">Aug 4 <span>&#183;</span> <span title="10 min read"> 10 min read. </span><i class="fas fa-star"></i></p>  
+          </div>
+          <div class="icons position-relative">
+            <i class="far fa-bookmark"></i>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <img src="https://source.unsplash.com/random/107x60" alt="Random Image" class="shorterImages position-relative">
+        </div>
+      </div>
+    </div>
   </div>
+
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+  </script>
 </body>
 </html>

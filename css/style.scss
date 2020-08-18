@@ -1,42 +1,50 @@
+html{
+    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+}
 header{
     height: 120px;
-}
+    }
+    .desk-header{
+        display: none; 
+    }
+    
     #logo{
+        margin-left: 2%;
         width: 50px;
         height: 50px;
-        padding: 0rem;
     }
     .navbar-nav{
-        width: 50px;
-        height: 50px;
-        margin-left: 5px;
-        padding-left: 150px;
-    }
-        #notify{
-            margin-top: 8px;
-            width: 25px;
-            height: 25px;
+        margin-left: 50%;
+
+        svg:hover{
+            fill: #292929;
+            cursor: pointer;
         }
         #search{
-            margin-top: 3px;
-            width: 55px;
-            height: 55px;
-            padding: 6px;
-        }
-        #man{
-            margin-top: 5px;
+            margin-top: 10px;
             width: 30px;
-            height: 30px;
-            padding-left: 10px;
+            height: 55px;
         }
-
-    .carousel-item .active{
-        padding-left: 50px;
+        #notify{
+            margin-top: 8px;
+            width: auto;
+            height: 25px;
+            padding-left: 8px;
+        }
+        
+        #man{
+            margin-top:8px;
+            width: auto;
+            height: 25px;
+            padding-left: 15px;
+            cursor: pointer;
+        }
     }
     .carousel-item{
-        padding-left: 3rem; 
+        padding-left: 10%; 
     }
     #i-l{
+        
         margin-top: 20px;
         width: 35px;
         height: 35px;
@@ -46,3 +54,491 @@ header{
         width: 35px;
         height: 35px;
     }
+    .carousel-tex{
+        color: #757575;
+        font-weight: 400;
+        font-family: sans-serif, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
+        font-size: 90%;
+        padding-left: 5%;
+    }
+.bigCard{
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .bigCardInfo{
+        width: 65%;
+        >p{
+            color: gray;
+        }
+        h5{
+            margin-top: 10px;
+            font-size: 21px;
+        }
+        .belowEachCardImage{
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            .moreInfo{
+                p{
+                    line-height: 5px;
+                }
+                p:nth-of-type(2){
+                    color: gray;
+                }
+            }
+            .icons{
+                display: flex;
+                left: 25px;
+                top: 10px;
+                i{
+                    color: gray;
+                    transform: scale(1.4);
+                }
+                i:first-of-type{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+.cardsBelow{
+    display: flex;
+    margin-top: 40px;
+    h5{
+        font-size: 18px;
+        position: relative;
+        top: 15px;
+    }
+    .moreInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .basedOn{
+            color: gray;
+            font-size: 12px;
+        }
+        .summary{
+            font-size: 13px;
+            top: 30px;
+            color: gray;
+        }
+        p:first-of-type{
+            position: relative;
+            top: 40px;
+        }
+        p{
+            font-size: 13px;
+        }
+        p:nth-of-type(2){
+            color: gray;
+            position: relative;
+            top: 30px;
+        }
+    }
+    .icons{
+        display:flex;
+        align-items: flex-end;
+        margin-right: 17px;
+        top: 10px;
+        i{
+            color: gray;
+        }
+        i:first-of-type{
+            margin-right: 10px;
+        }
+    }
+    .shorterImages{
+        height: 70%;
+        width: 35%;
+        top: 20px;
+    }
+}
+#anchor{
+    top: 50px;
+    left: 10px;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgb(27, 201, 42);
+    a{
+        color: rgb(27, 201, 42);
+    }
+}
+hr{
+    margin-top: 70px;
+}
+.toggleClass{
+    display: none;
+}
+
+// Mauro
+.bigCard{
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .bigCardInfo{
+        width: 65%;
+        >p{
+            color: gray;
+        }
+        h5{
+            margin-top: 10px;
+            font-size: 21px;
+        }
+        .belowEachCardImage{
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            .moreInfo{
+                p{
+                    line-height: 5px;
+                }
+                p:nth-of-type(2){
+                    color: gray;
+                }
+            }
+            .icons{
+                display: flex;
+                left: 25px;
+                top: 10px;
+                i{
+                    color: gray;
+                    transform: scale(1.4);
+                }
+                i:first-of-type{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+.cardsBelow{
+    display: flex;
+    margin-top: 40px;    
+    h5{
+        font-size: 18px;
+        position: relative;
+        top: 15px;
+    }
+    .moreInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .basedOn{
+            color: gray;
+            font-size: 12px;
+        }
+        .summary{
+            font-size: 13px;
+            top: 30px;
+            color: gray;
+        }
+        p:first-of-type{
+            position: relative;
+            top: 40px;
+        }
+        p{
+            font-size: 13px;
+        }
+        p:nth-of-type(2){
+            color: gray;
+            position: relative;
+            top: 30px;
+        }
+    }
+    .icons{
+        display:flex;
+        align-items: flex-end;
+        margin-right: 17px;
+        top: 10px;
+        i{
+            color: gray;
+        }
+        i:first-of-type{
+            margin-right: 10px;
+        }
+    }
+    .shorterImages{
+        height: 70%;
+        width: 35%;
+        top: 20px;
+    }
+}
+#anchor{
+    top: 50px;
+    left: 10px;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgb(27, 201, 42);
+    a{
+        color: rgb(27, 201, 42);
+    }
+}
+hr{
+    margin-top: 70px;
+}
+.toggleClass{
+    display: none;
+}
+
+// Haro
+
+.aside{
+    hr{
+      margin-top: 1em;
+      margin-bottom: 2rem;
+    }
+    .popular-on-medium{
+      margin: 0;
+      padding: 0;
+      // margin-left: -2rem;
+      width: 100%;
+      .contenedor-li{
+        .numero{
+          color: lightgray;
+          font-size: 25px;
+          font-weight: medium;
+          margin-top: -8px;
+        }
+        .contenido{      
+          line-height: 1.3rem;
+          margin-left: 1rem;
+          .popular-primer-a{
+            color: #000000D6;
+            font-weight: 500;
+            cursor: pointer;
+          }
+          .popular-primer-p{
+            color: #000000D6;
+            font-size: .9rem;
+            margin-bottom: 0;
+            a{
+              color: #000000D6;
+              font-size: .9rem;
+              cursor: pointer;
+            }
+          }  
+          .popular-segundo-p{
+            font-size: .9rem;
+            color: #0000008A;
+          }
+          .estrella{
+            width: .7rem;
+            fill: #ffffff;
+          }                     
+        }
+      } 
+    }  
+    footer{
+      // display: none;
+      hr{
+        margin-top: 3rem;
+        margin-bottom: .5rem;
+        margin-left: -1rem;
+      }
+      ul{
+        margin-left: -1rem;
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        li{
+          margin: 0 15px 0 0;        
+          a{
+            color: #0000008A;
+            font-size: 13px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+.haroContainer{
+    margin-top: 20px;
+}
+footer{
+    display: none;
+}
+
+
+@media only screen and (min-width:1200px){
+    .mobile-header{
+        display: none;
+    }
+    .desk-header{
+         display: block;
+    }
+    header{
+        height: 120px;
+        }
+        #logo{
+            width: auto;
+            margin-left: 20px;
+            height: 50px;
+            padding: 0rem;
+        }
+        .navbar-nav{
+            margin-left: 50%;
+            svg:hover{
+                cursor: pointer;
+            }
+            .btn-outline-secondary{
+                margin-top: 10px;
+                height: 40px;
+                margin-left: 5%;
+                cursor: pointer;
+            }
+            #search{
+                margin-top: 16px;
+                width: 30px;
+                height: 60px;
+            }
+            #boo-nav{
+                margin-top: 15px;
+                width: 50px;
+                height: 55px;
+                padding-left: 5%;
+            }
+            #notify{
+                margin-top: 8px;
+                width: auto;
+                height: 40px;
+                padding-left: 5%;
+            }
+            
+            #man{
+                margin-top:8px;
+                width: auto;
+                height: 40px;
+                padding-left: 8%;
+                cursor: pointer;
+            }
+        }
+        .carousel-item{
+            padding-left: 10%; 
+        }
+        #i-l{
+            margin-left: 30px;
+            margin-top: 20px;
+            width: 35px;
+            height: 35px;
+        }
+        #i-r{
+            margin-right: 25px;
+            margin-top: 20px;
+            width: 35px;
+            height: 35px;
+        }
+        .carousel-tex{
+            color: #757575;
+            font-weight: 400;
+            font-size: 12px;
+            padding-left: 25px;
+        }
+#anchor{
+    left: 120px;
+}
+#crossedHr{
+    width: 72vw;
+    position: relative;
+    right: 760px;
+}
+    .card-bottom-mobile{
+        display: none;
+    }
+    .toggleClass{
+        display: block;
+        position: relative;
+        top: -5px;
+        width: 350px;
+        img{
+            width: 80%;
+        }
+    }
+    .imagesAbove{
+        position: relative;
+        top: -42px;
+        width: 10px;
+    }
+    .imagesAbove{
+        .cardsBelow{
+            flex-direction: row-reverse;
+            margin-top: 20px;
+            position: relative;
+            top: 20px;
+            .icons{
+                order: -1;
+                top: -20px;
+                i:first-of-type{
+                    display:none;
+                }
+            }
+            .moreInfo{
+                position: relative;
+                top:-18px;
+                left: 25px;
+                p{
+                    line-height: 15px;
+                }
+            }
+            img{
+                width: 50%;
+            }
+        }
+    }
+    .bigCard{
+        img{
+            height: 134px;
+        }
+        .bigCardInfo{
+            .belowEachCardImage{
+                .moreInfo{
+                    p{
+                        line-height: 15px;
+                    }
+                } 
+                .icons{
+                    .far{
+                        display: none;
+                    }
+                    .fas{
+                        position: relative;
+                        left: 20px;
+                    }
+                }
+            }
+        }
+        .aboveMove{
+            position: relative;
+            left: 50px;
+        }
+    }
+    .content{
+        .haroContainer{
+            .aside{
+                // color: yellow;
+                position: -webkit-sticky;  // required for Safari
+                position: sticky;
+                top: -30px; // required as well.
+                margin: auto;
+            }
+            h4{
+                display: flex;
+                margin-left: auto;                
+            }  
+            hr{
+                // width: 80%;
+                // position: relative;
+                right: 40px;
+            }
+            footer{
+                display: block;
+            }
+        }
+        
+    }   
+    
+}
+
